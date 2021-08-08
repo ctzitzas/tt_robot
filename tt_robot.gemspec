@@ -4,7 +4,7 @@ require_relative "lib/tt_robot/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "tt_robot"
-  spec.version       = TtRobot::VERSION
+  spec.version       = TT_Robot::VERSION
   spec.authors       = ["Chris Tzitzas"]
   spec.email         = ["ctzitzas@gmail.com"]
 

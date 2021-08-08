@@ -2,7 +2,13 @@
 
 require_relative "tt_robot/version"
 
-module TtRobot
-  class Error < StandardError; end
-  # Your code goes here...
+module TT_Robot
+
+  Move_values = {
+      "NORTH" => {:x => 0, :y => 1},
+      "SOUTH" => {:x => 0, :y => -1},
+      "EAST" => {:x => 1, :y => 0},
+      "WEST" => {:x => -1, :y => 0}
+    }
+  
 end

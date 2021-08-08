@@ -1,11 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe TtRobot do
+RSpec.describe TT_Robot do
   it "has a version number" do
-    expect(TtRobot::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    expect(TT_Robot::VERSION).not_to be nil
   end
 end
