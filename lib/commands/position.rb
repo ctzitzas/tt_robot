@@ -1,11 +1,11 @@
-require_relative 'command'
+require_relative "command"
 
 class Position < Command
   def initialize(robot)
     super(robot)
     @board = {
-      :x_range => (0..4).to_a,
-      :y_range => (0..4).to_a
+      x_range: (0..4).to_a,
+      y_range: (0..4).to_a
     }
   end
 

@@ -1,8 +1,10 @@
 class Robot
-  attr_reader :direction, :position, :change_direction, :change_position, :robot_has_position
-  def initialize()
+  attr_reader :direction, :position, :change_direction, :change_position, :robot_has_position, :output
+
+  def initialize(output)
     @direction = nil
     @position = nil
+    @output = output
   end
 
   def change_position_to(new_position)
@@ -13,12 +15,12 @@ class Robot
     @direction = new_direction
   end
 
-  def set_position_direction(new_position, new_direction)
-    @direction = new_direction
-    @position = new_position
+  def place(hash)
+    @direction = hash[:direction]
+    @position = hash[:position]
   end
 
-  def robot_has_position
-    @position != nil
+  def has_position
+    !@position.nil?
   end
 end

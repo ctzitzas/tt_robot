@@ -1,10 +1,6 @@
-require_relative 'position'
+require_relative "position"
 class Place < Position
-  def initialize(robot)
-    super(robot)
-  end
-
-  def relocate_to(destination, direction)
-    @@robot.set_position_direction(destination, direction)
+  def run(hash)
+    @robot.place(hash) if destination_exists(hash[:position])
   end
 end

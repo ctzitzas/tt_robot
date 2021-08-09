@@ -1,0 +1,5 @@
+board_size:
+  # Boards maximum x value
+  - 4
+  # Boards maximum y value
+  - 4
